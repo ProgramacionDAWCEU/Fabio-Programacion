@@ -34,7 +34,7 @@ static String[][] iniciarTablero(String tablero[][]) {
 				}
 				
 				return ubicacion;
-				
+				//
 	}
 	
 	static void tableroActualizado(String tablero[][] , int fila , int columna , int jugador) {
