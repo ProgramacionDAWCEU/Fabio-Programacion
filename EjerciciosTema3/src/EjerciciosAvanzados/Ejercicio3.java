@@ -1,4 +1,4 @@
-package programas;
+package EjerciciosAvanzados;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -105,11 +105,13 @@ static String[][] iniciarTablero(String tablero[][]) {
 				columna = scanner.nextInt();
 				tableroActualizado(tablero, fila, columna, jugador);
 				
-				//hola hola
+				
 			}
 			
 		} while (estado_partida == 0);
-	}
+		
+		scanner.close()	;
+		}
 	
 	
 
