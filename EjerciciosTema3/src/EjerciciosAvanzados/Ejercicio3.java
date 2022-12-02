@@ -62,6 +62,14 @@ static String[][] iniciarTablero(String tablero[][]) {
 				}
 			}
 			
+		} else if ( jugador == 3) {
+			for ( int i = 0; i < tablero.length; i++) {
+				System.out.println();
+				for ( int j = 0; j < tablero.length; j++) {
+					tablero[fila][columna] = "*";
+					System.out.println(tablero);
+				}
+			}
 		}
 	}
 
@@ -78,7 +86,7 @@ static String[][] iniciarTablero(String tablero[][]) {
 		int fila = 0;
 		int columna = 0;
 		do {
-			System.out.println("Quiere despejar o marcar una mina (1/2)");
+			System.out.println("Quiere despejar , marcar un mina o quitar una mina (1/2/3) ");
 			jugador = scanner.nextInt();
 			
 			if ( jugador == 1) {
@@ -105,6 +113,13 @@ static String[][] iniciarTablero(String tablero[][]) {
 				columna = scanner.nextInt();
 				tableroActualizado(tablero, fila, columna, jugador);
 				
+				
+			}else if ( jugador == 3) {
+				System.out.println("fila");
+				fila = scanner.nextInt();
+				System.out.println("columna");
+				columna = scanner.nextInt();
+				tableroActualizado(tablero, fila, columna, jugador);
 				
 			}
 			
