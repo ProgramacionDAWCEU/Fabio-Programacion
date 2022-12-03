@@ -62,7 +62,7 @@ static String[][] iniciarTablero(String tablero[][]) {
 				}
 			}
 			
-		} else if ( jugador == 3) {
+		} else if ( jugador == 3) { //Quitar banderas
 			for ( int i = 0; i < tablero.length; i++) {
 				System.out.println();
 				for ( int j = 0; j < tablero.length; j++) {
@@ -92,7 +92,7 @@ static String[][] iniciarTablero(String tablero[][]) {
 			if ( jugador == 1) {
 				
 				//despejar
-				
+				System.out.println("Despejar");
 				System.out.println("fila");
 				fila = scanner.nextInt();
 				System.out.println("columna");
@@ -104,9 +104,10 @@ static String[][] iniciarTablero(String tablero[][]) {
 				}
 				
 			}else if ( jugador == 2) {
-				////
+				
 				//Marcar mina y mostrar tablero actualizado
 				
+				System.out.println("Marcar una mina");
 				System.out.println("fila");
 				fila = scanner.nextInt();
 				System.out.println("columna");
@@ -115,6 +116,10 @@ static String[][] iniciarTablero(String tablero[][]) {
 				
 				
 			}else if ( jugador == 3) {
+				
+				//Quitar una bandera
+				
+				System.out.println("Quitar bandera");
 				System.out.println("fila");
 				fila = scanner.nextInt();
 				System.out.println("columna");
@@ -123,7 +128,7 @@ static String[][] iniciarTablero(String tablero[][]) {
 				
 			}
 			
-		} while (estado_partida == 0);//prueba de git
+		} while (estado_partida == 0);
 		
 		scanner.close()	;
 		}
