@@ -123,7 +123,7 @@ static String[][] iniciarTablero(String tablero[][]) {
 				
 			}
 			
-		} while (estado_partida == 0);
+		} while (estado_partida == 0);//prueba de git
 		
 		scanner.close()	;
 		}
