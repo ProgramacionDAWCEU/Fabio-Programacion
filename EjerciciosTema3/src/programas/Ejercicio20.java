@@ -32,31 +32,44 @@ public class Ejercicio20 {
 		int fallos = 0;
 		int posicion = 0;
 		int fallos_turno  = 0;
+		String letra = "";
 		
 		System.out.println(palabra_user);
 		
 		do {
 			
 			System.out.println("Escriba letra");
-			String letra = scanner.nextLine();
+		 letra = scanner.nextLine();
 			
 			for ( int i = 0; i < user.length; i++) {
 				if ( letra.equals(user[i])) {
 					acertadas[i] = letra;
+					break;
 					
+				}else if ( !letra.equals(user[i])) {
+					fallos++;
+					System.out.println("Ha fallado " + fallos);
 				}
 				
 			}
 			
 			for ( int j = 0; j < acertadas.length; j++) {
 				System.out.print(acertadas[j]);
+				
 			}
 			
-		} while (fallos < 5);
+			if ( acertadas.equals(user)) {
+				System.out.println("Ha ganado ");
+				
+			}
+			
+			fallos_turno = 0;
+			
+		} while (fallos < 5 || !acertadas.equals(user));
 		
 		
 		
-		
+		//Hola Mamá
 		
 	}
 
