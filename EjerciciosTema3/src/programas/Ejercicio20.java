@@ -69,7 +69,7 @@ public class Ejercicio20 {
 		
 		
 		
-		//Hola Mamá
+		
 		
 	}
 
