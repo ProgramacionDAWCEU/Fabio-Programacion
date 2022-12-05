@@ -44,13 +44,18 @@ public class Ejercicio20 {
 			for ( int i = 0; i < user.length; i++) {
 				if ( letra.equals(user[i])) {
 					acertadas[i] = letra;
-					break;
-					
-				}else if ( !letra.equals(user[i])) {
-					fallos++;
-					System.out.println("Ha fallado " + fallos);
+					posicion++;
+					break;	
 				}
 				
+			}
+			
+			if ( posicion == 0) {
+				fallos++;
+				System.out.println("Ha fallado " + fallos);
+				
+			}else {
+				posicion = 0;
 			}
 			
 			for ( int j = 0; j < acertadas.length; j++) {
@@ -63,11 +68,11 @@ public class Ejercicio20 {
 				
 			}
 			
-			fallos_turno = 0;
+			
 			
 		} while (fallos < 5 || !acertadas.equals(user));
 		
-		
+		scanner.close();
 		
 		
 		
