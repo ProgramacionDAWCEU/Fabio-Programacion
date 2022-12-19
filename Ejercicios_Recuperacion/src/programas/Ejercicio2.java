@@ -33,7 +33,9 @@ public class Ejercicio2 {
 			}else if ( palabra.length() > numero) {
 				System.out.println("La palabra es mayor a " + numero);
 			}
-		} while (palabra.length() == numero && palabra.endsWith(silaba));
+		}while (palabra.length() == numero && palabra.endsWith(silaba));
+		
+		scanner.close();
 	}
 
 }
