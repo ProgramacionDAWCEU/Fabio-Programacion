@@ -2,14 +2,22 @@ package Numeros;
 
 public class Numeros {
 	
-	public static void sumarNumeros(int inicial , int N) {
-		//Sumar numeros
-		Integer suma = 0;
-		for ( int i = N; i > inicial; i--) {
-			
-			suma = suma + i + (i-1);
+	public static int sumarNumeros(int N) {
+		
+		if (N==0) {
+			return 0;
+		}else {
+			return N + factorial(N-1);
 		}
-		System.out.println(suma);
+	}
+	
+	public static int factorial(int N) {
+		//Calcular factorial con recursividad
+		if ( N== 0) {
+			return 1;
+		}else {
+			return N * factorial(N-1);
+		}
 	}
 
 }

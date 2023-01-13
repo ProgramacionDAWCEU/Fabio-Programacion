@@ -15,8 +15,12 @@ public class Ejercicio8 {
 		System.out.println(mult);
 		System.out.println(div);
 		System.out.println("Escriba la función ");
-		String f = scanner.nextLine();
-		System.out.println(funcion(f, 2,4));
+		String f = scanner.nextLine().toUpperCase().trim();
+		System.out.println("Escriba numeros");
+		int x = scanner.nextInt();
+		System.out.println("Escriba numeros");
+		int y = scanner.nextInt();
+		System.out.println(funcion(f, x,y));
 	}
 	
 	public static Integer funcion(String f, int x, int y) {
