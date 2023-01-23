@@ -2,24 +2,19 @@ package Alumnos;
 
 import java.util.Scanner;
 
-public class Ejercicio18 {
+public class Ejercicio21 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Alumno alumno = new Alumno();
 		
-		String DNI = "65465456";
-		String nombre = "Pepe";
-		Integer edad = 18;
-		Integer nota = 3;
+		String nombre = "XXXX";
+		int edad = 21;
 		
-		alumno.setDni(DNI);
 		alumno.setNombre(nombre);
 		alumno.setEdad(edad);
-		alumno.setNota(nota);
 		
 		System.out.println(alumno.toString());
-		
 	}
 
 }
