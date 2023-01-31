@@ -18,6 +18,9 @@ public class Ejercicio25 {
 			System.out.println("Digame el dni del alumno");
 			al.setDni(scanner.nextLine());
 			scanner.nextLine();
+			if ( listaAlumno[i].validarDni() == false) {
+				System.out.println("Error en el dni	");
+			}
 		}
 		
 		if ( listaAlumno[0].equals(listaAlumno[1]) || listaAlumno[1].equals(listaAlumno[2])) {
