@@ -1,6 +1,7 @@
 package Alumnos;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Curso {
 
@@ -11,6 +12,7 @@ public class Curso {
 	private Alumno alumnos[];
 	private Integer contador;
 	private Curso curso;
+	private List<Alumno> alumnos1;
 
 	// Constructores
 
