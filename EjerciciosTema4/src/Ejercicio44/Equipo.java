@@ -1,5 +1,7 @@
 package Ejercicio44;
 
+import java.util.List;
+
 public class Equipo {
 
 	/*
@@ -7,6 +9,6 @@ public class Equipo {
 	 */
 	
 	protected Integer vidaTotal;
-	
+	private List<Personaje> personajes;
 
 }
