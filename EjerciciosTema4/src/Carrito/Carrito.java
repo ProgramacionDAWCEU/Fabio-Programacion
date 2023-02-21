@@ -37,8 +37,8 @@ public class Carrito {
 		this.cliente = cliente;
 	}	
 	
-	public void addArticulo(List lista) {
-		lista.add();
+	public void addArticulo(Articulo articulo) {
+		listaArticulos.add(articulo);
 	}
 	
 }
