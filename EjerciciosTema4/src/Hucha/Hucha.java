@@ -10,7 +10,7 @@ public class Hucha {
 		
 	}
 	
-	public BigDecimal meterDinero(BigDecimal dinero, BigDecimal meter) {
+	public BigDecimal meterDinero(BigDecimal meter) {
 		BigDecimal total = dinero.add(meter); 
 		return total;
 	}
@@ -28,4 +28,12 @@ public class Hucha {
 		total = new BigDecimal(0);
 		return dinero;
 	}
+
+	@Override
+	public String toString() {
+		return "Hucha [dinero=" + dinero + "]";
+	}
+	
+	
+	
 }
