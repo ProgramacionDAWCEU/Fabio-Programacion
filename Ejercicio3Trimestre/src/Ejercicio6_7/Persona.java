@@ -6,25 +6,21 @@ public class Persona {
 	private String genero;
 	private BigDecimal altura;
 
-	public void setGenero(String genero) throws ParametroIncorrectoException{
-		if ( !genero.equalsIgnoreCase("H") && !genero.equalsIgnoreCase("M")) {
+	public void setGenero(String genero) throws ParametroIncorrectoException {
+		if (!genero.equalsIgnoreCase("H") && !genero.equalsIgnoreCase("M")) {
 			throw new ParametroIncorrectoException("Genero incorrecto");
-		}else {
+		} else {
 			this.genero = genero;
 		}
 	}
 
 	public void setAltura(BigDecimal altura) throws ParametroIncorrectoException {
-		if ( altura.compareTo(BigDecimal.ZERO) <= 0 || altura.compareTo(new BigDecimal(3)) >= 0) {
+		if (altura.compareTo(BigDecimal.ZERO) <= 0 || altura.compareTo(new BigDecimal(3)) >= 0) {
 			throw new ParametroIncorrectoException("Altura incorrecta");
-		}else {
+		} else {
 			this.altura = altura;
 		}
 	}
-	
-	
-	
-	
 
 	public String getGenero() {
 		return genero;
@@ -38,7 +34,5 @@ public class Persona {
 	public String toString() {
 		return "Persona [genero=" + genero + ", altura=" + altura + "]";
 	}
-	
-	
 
 }

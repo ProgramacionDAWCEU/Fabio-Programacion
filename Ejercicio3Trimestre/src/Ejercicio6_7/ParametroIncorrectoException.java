@@ -2,7 +2,6 @@ package Ejercicio6_7;
 
 public class ParametroIncorrectoException extends Exception {
 
-	
 	private static final long serialVersionUID = -6176217779685514291L;
 
 	public ParametroIncorrectoException() {
@@ -31,5 +30,4 @@ public class ParametroIncorrectoException extends Exception {
 		// TODO Auto-generated constructor stub
 	}
 
-	
 }

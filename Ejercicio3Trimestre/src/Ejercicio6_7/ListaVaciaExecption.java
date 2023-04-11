@@ -2,7 +2,6 @@ package Ejercicio6_7;
 
 public class ListaVaciaExecption extends Exception {
 
-	
 	private static final long serialVersionUID = 1761881727750359297L;
 
 	public ListaVaciaExecption() {
@@ -30,6 +29,4 @@ public class ListaVaciaExecption extends Exception {
 		// TODO Auto-generated constructor stub
 	}
 
-	
-	
 }
