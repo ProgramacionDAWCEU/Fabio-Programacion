@@ -28,17 +28,17 @@ public class SacoNumeros {
 		BigDecimal bd;
 		int i;
 		try {
-			
+
 			for (i = 0; i < lista.size() - 1; i++) {
 				if (i == lista.size()) {
 					break;
 				} else {
 					d = lista.get(i) / lista.get(i + 1);
-					bd =  BigDecimal.valueOf(d);
+
 				}
 
 			}
-			bd =  BigDecimal.valueOf(d);
+			bd = BigDecimal.valueOf(d);
 			return bd;
 
 		} catch (ArithmeticException e) {
