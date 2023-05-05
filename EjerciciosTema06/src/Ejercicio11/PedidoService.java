@@ -22,7 +22,7 @@ public class PedidoService {
 			conn = proveedor.getConnection();
 			stmt = conn.createStatement();
 
-			String sql = "SELECT * FROM PEDIDOS_LINEAS WHERE NUMERO_PEDIDO = " + numero_pedido;
+			String sql = "SELECT * FROM PEDIDOS_LINEAS WHERE NUMERO_PEDIDO = " + numeroPedido;
 			rs = stmt.executeQuery(sql);
 
 			
