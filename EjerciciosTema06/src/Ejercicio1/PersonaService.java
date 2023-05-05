@@ -68,8 +68,9 @@ public class PersonaService {
 					+ "%'";
 			rs = stmt.executeQuery(sql);
 
-			Persona persona = new Persona();
+			
 			while (rs.next()) {
+				Persona persona = new Persona();
 				String apellido = rs.getString("apellidos");
 				String nombre = rs.getString("nombre");
 				String dni1 = rs.getString("dni");
